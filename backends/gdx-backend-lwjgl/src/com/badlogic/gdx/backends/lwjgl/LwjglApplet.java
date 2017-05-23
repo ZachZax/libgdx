@@ -42,6 +42,11 @@ public class LwjglApplet extends Applet {
 		public ApplicationType getType () {
 			return ApplicationType.Applet;
 		}
+		
+		@Override
+		public ApplicationType getType(){
+			return ApplicationType.load;
+		}
 	}
 
 	public LwjglApplet (final ApplicationListener listener, final LwjglApplicationConfiguration config) {
